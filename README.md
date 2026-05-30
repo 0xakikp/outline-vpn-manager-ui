@@ -48,16 +48,22 @@ A stunning, production-ready web dashboard for managing Outline VPN servers. Bui
 ## Screenshots
 
 ### Overview Tab
-4 KPI cards with animated counters, data usage bar chart (top 6 keys), recent keys list with status badges, data limit alerts panel, and floating "New Key" action button.
+![Overview Tab](screenshots/overview-tab.png)
+*4 KPI cards with animated counters, data usage bar chart (top 6 keys), recent keys list with status badges, data limit alerts panel, and floating "New Key" action button.*
 
 ### Keys Tab
-Full CRUD table with search, sortable columns, checkbox selection, bulk delete, status badges with progress bars, edit modal with QR code, and slide-out detail drawer.
+![Keys Tab](screenshots/keys-tab.png)
+*Full CRUD table with search, sortable columns, checkbox selection, bulk delete, status badges with progress bars, edit modal with QR code, and slide-out detail drawer.*
 
 ### Analytics Tab
-Donut chart (data distribution), area chart (30-day trend), per-key breakdown table with rankings, insights panel (top consumer, unused keys, limit status), and export dropdown.
+![Analytics Tab](screenshots/analytics-tab.png)
+*Donut chart (data distribution), area chart (30-day trend), per-key breakdown table with rankings, insights panel (top consumer, unused keys, limit status), and export dropdown.*
 
 ### Settings Tab
-Server identity (auto-save), network configuration, connection info with copy buttons, danger zone with reset all limits and disconnect confirmations.
+![Settings Tab](screenshots/settings-tab.png)
+*Server identity (auto-save), network configuration, connection info with copy buttons, danger zone with reset all limits and disconnect confirmations.*
+
+> **Note:** Add your own screenshots to the `screenshots/` directory and update the paths above. Recommended size: 1280×720 or 1440×900.
 
 ---
 
