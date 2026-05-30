@@ -14,7 +14,7 @@ const url = require('url');
 
 const PORT = process.env.PORT || 3002;
 const DIST_DIR = path.join(__dirname, 'dist');
-const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN || '*';
+const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN || 'https://outline.akikp.in';
 
 // MIME types
 const MIME_TYPES = {
@@ -131,9 +131,11 @@ function proxyRequest(req, res) {
 
 const server = http.createServer((req, res) => {
   // CORS headers for all responses
-  res.setHeader('Access-Control-Allow-Origin', ALLOWED_ORIGIN);
+  const origin = req.headers.origin || ALLOWED_ORIGIN;
+  res.setHeader('Access-Control-Allow-Origin', origin);
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Access-Control-Max-Age', '86400');
 
   if (req.method === 'OPTIONS') {
